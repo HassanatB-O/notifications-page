@@ -35,9 +35,6 @@ nav{
 .text{
     margin-left: 1em;
 }
-.unread-activity{
-
-}
 .unread-activity::after{
     content: "";
     background-color: hsl(1, 90%, 64%);
@@ -66,11 +63,13 @@ p{
     color: hsl(219, 85%, 26%);
     font-weight: 800;
     cursor: pointer;
+    margin-left: 5px;
 }
 .activity{
     color:hsl(219, 12%, 42%);
     font-weight: 800;
     cursor: pointer;
+    margin-left: 5px;
 }
 #notification-length{
     color: hsl(210, 60%, 98%);
@@ -79,6 +78,12 @@ p{
     padding: .4rem;
     margin-top: -10px;
     border-radius: 6px;
+}
+.mark-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 #mark{
     cursor: pointer;
