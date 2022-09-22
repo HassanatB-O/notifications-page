@@ -1,0 +1,106 @@
+*{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+body{
+    background-color: hsl(210, 60%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    margin: auto;
+    width: 50%;
+    border-radius: 12px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.unread{
+    display: flex;
+    background-color: hsl(211, 68%, 94%);
+    padding: .8rem;
+    border-radius: 10px;
+    margin: .5em 0;
+}
+.read{
+    display: flex;
+    padding: .8rem;
+    border-radius: 10px;
+    margin: .5em 0;
+}
+.text{
+    margin-left: 1em;
+}
+.unread-activity{
+
+}
+.unread-activity::after{
+    content: "";
+    background-color: hsl(1, 90%, 64%);
+    width: 10px;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 10px;
+    border-radius: 50%;
+}
+p{
+    color: hsl(219, 14%, 63%);
+    font-weight: 500;
+}
+.name{
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.name:hover, .name:active, .activity:hover, .activity:active{
+    color: hsl(219, 85%, 26%);
+}
+.club{
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+    cursor: pointer;
+}
+.activity{
+    color:hsl(219, 12%, 42%);
+    font-weight: 800;
+    cursor: pointer;
+}
+#notification-length{
+    color: hsl(210, 60%, 98%);
+    background-color: hsl(219, 85%, 26%);
+    font-size: 1.1rem;
+    padding: .4rem;
+    margin-top: -10px;
+    border-radius: 6px;
+}
+#mark{
+    cursor: pointer;
+}
+#mark:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+@media screen and (min-width: 1140px){
+    .img-div{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+}
